@@ -1,0 +1,65 @@
+// main.sass
+$grey: #666
+$darkest-grey: #111
+$white: #FFF
+$nav-padding: 14px 16px
+
+html
+
+	body
+		margin: 0
+	.content
+		max-width: 1200px
+		margin: auto
+	a 
+		text-decoration: none
+		font-weight: bold
+	h1
+		text-align: center
+
+	// Navigation
+	header
+		background-color: $grey
+		overflow: hidden
+
+		#logo
+			color: $white
+			float: left
+			align-items: center
+			padding: $nav-padding
+			padding-left: 0
+			display: flex
+			#sun-container
+				color: #ffbe26
+			#logo-text
+				margin: 0
+				padding-left: 10px
+
+		nav
+			float: right
+			ul
+				list-style-type: none
+				margin: 0
+				padding: 0
+				overflow: hidden
+				li
+					float: left
+					min-width: 130px
+					a
+						display: block
+						color: $white
+						text-align: center
+						padding: $nav-padding
+					&:hover
+						background-color: $darkest-grey
+					&:hover .dropdown
+						display: inline-block
+				.dropdown
+					display: none
+					position: absolute
+					min-width: 134px
+					z-index: 1
+					background-color: $grey
+					box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+					li
+						float: unset

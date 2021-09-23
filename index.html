@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Visit Taniti</title>  
+	<link rel="stylesheet" href="css/build/main.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/build/index.css" type="text/css" media="all">
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script defer src="js/all.min.js"></script>
+	<script> 
+		$(function(){
+			$("#header").load("html-fragments/header.html"); 
+		});
+	</script>
+</head>
+<body>
+	<header id="header"></header>
+	<main>
+		<div id="hero">
+			<i class="fas fa-umbrella-beach"></i>
+		</div>
+		<section id="contact" class="content">
+			<h1>Contact Us</h1>
+			<form action="#">
+				<span class="field">
+					<label for="email">Email</label>
+					<input id="email" type="text"><br>
+				</span>
+				<span class="field">
+					<label for="message">Message</label>
+					<textarea id="message"></textarea><br>
+				</span>
+				<input id="msg-btn" type="submit" value="Send Message">
+			</form>
+			<aside id="happy_image">
+				<i class="fas fa-users"></i>
+			</aside>
+		</section>
+	</main>
+</body>
+</html>
